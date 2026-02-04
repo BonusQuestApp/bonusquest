@@ -37,33 +37,42 @@
             </section>
             <section class="screenshots">
                 <h2>See BonusQuest in Action</h2>
-                <div class="screenshot-grid">
-                    <div class="screenshot-card">
-                        <img src="assets/dashboard.png" alt="Dashboard screen showing quest tracking">
-                        <div class="screenshot-caption">Dashboard - Track all your quests at a glance</div>
-                    </div>
-                    <div class="screenshot-card">
-                        <img src="assets/questhistory.png" alt="Quest History screen showing completed adventures">
-                        <div class="screenshot-caption">Quest History - View your completed adventures</div>
-                    </div>
-                    <div class="screenshot-card">
-                        <img src="assets/milestones.png" alt="Milestones screen showing achievements">
-                        <div class="screenshot-caption">Milestones - Unlock achievements as you progress</div>
-                    </div>
-                    <div class="screenshot-card">
-                        <img src="assets/partyprofile.png" alt="Party Profile screen showing party stats">
-                        <div class="screenshot-caption">Party Profile - Manage your party's stats and progress</div>
-                    </div>
-                    <div class="screenshot-card">
-                        <img src="assets/addquest.png" alt="Add Quest screen for creating new adventures">
-                        <div class="screenshot-caption">Add Quest - Create new banking bonus adventures</div>
-                    </div>
-                    <div class="screenshot-card">
-                        <img src="assets/edittask.png" alt="Edit Task screen for managing quest requirements">
-                        <div class="screenshot-caption">Edit Tasks - Track and complete quest requirements</div>
+                
+                <!-- Horizontal Carousel -->
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="assets/dashboard.png" alt="Dashboard - Track all your quests at a glance" data-full="assets/dashboard.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/questhistory.png" alt="Quest History - View your completed adventures" data-full="assets/questhistory.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/milestones.png" alt="Milestones - Unlock achievements as you progress" data-full="assets/milestones.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/partyprofile.png" alt="Party Profile - Manage your party's stats and progress" data-full="assets/partyprofile.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/addquest.png" alt="Add Quest - Create new banking bonus adventures" data-full="assets/addquest.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/edittask.png" alt="Edit Tasks - Track and complete quest requirements" data-full="assets/edittask.png">
+                        </div>
                     </div>
                 </div>
+                
+                <p class="carousel-hint">Tap any screenshot to view full size</p>
             </section>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <button class="lightbox-close">&times;</button>
+                <button class="lightbox-prev">‹</button>
+                <img class="lightbox-image" src="" alt="">
+                <button class="lightbox-next">›</button>
+                <div class="lightbox-caption"></div>
+            </div>
             <section class="features">
                 <div class="feature">
                     <span class="feature-icon">⚔️</span>
@@ -95,5 +104,72 @@
             </nav>
         </footer>
     </div>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselItems = document.querySelectorAll('.carousel-item img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+    
+    let currentIndex = 0;
+    const totalItems = carouselItems.length;
+    
+    // Open lightbox
+    carouselItems.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            updateLightbox();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close lightbox
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
+    });
+    
+    // Touch/swipe support for lightbox
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+    lightbox.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) navigate(diff > 0 ? 1 : -1);
+    });
+    
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function navigate(direction) {
+        currentIndex = (currentIndex + direction + totalItems) % totalItems;
+        updateLightbox();
+    }
+    
+    function updateLightbox() {
+        const img = carouselItems[currentIndex];
+        lightboxImage.src = img.dataset.full;
+        lightboxImage.alt = img.alt;
+        lightboxCaption.textContent = img.alt;
+    }
+});
+</script>
 </body>
 </html>

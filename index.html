@@ -3,119 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLP Track</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        /* Custom font import for better aesthetics */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7fafc; /* Light gray background */
-        }
-
-        /* --- Custom Styles for Staggered Image Layout --- */
-        /* Base class for fixed size and relative positioning */
-        .staggered-image {
-            width: 185px; /* Fixed width as requested by user (185px) */
-            max-height: 400px;
-            height: auto;
-            position: relative;
-        }
-
-        /* Individual vertical offsets for staggering effect */
-        .stagger-offset-1 {
-            top: 0px; /* Image 1: Highest */
-        }
-        .stagger-offset-2 {
-            top: 30px; /* Image 2: Offset down */
-        }
-        .stagger-offset-3 {
-            top: 60px; /* Image 3: Lowest */
-        }
-    </style>
+    <title>BonusQuest - Turn Bonus Hunting Into an Adventure</title>
+    <meta name="description" content="Gamified banking bonus tracking app. Track accounts, complete quests, earn XP, unlock achievements, and level up your party.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 </head>
 <body>
-
-<header class="bg-white shadow-lg sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <!-- Page Title -->
-            <div class="flex-shrink-0">
-                <span class="text-2xl font-extrabold text-indigo-700 tracking-tight">
-                    GLP Track
-                </span>
-            </div>
-            <!-- Navigation Links -->
-            <nav class="flex space-x-6">
-                <a href="https://github.com/ubenmackin/GLPTrack/issues" class="text-gray-600 hover:text-indigo-600 transition duration-150 ease-in-out font-medium">
-                    Contact
+    <div class="container">
+        <header>
+            <div class="logo">🎮</div>
+            <h1>BonusQuest</h1>
+            <p class="tagline">Turn Bonus Hunting Into an Adventure</p>
+        </header>
+        <main>
+            <section class="description">
+                <p>Transform your banking rewards journey into an exciting quest system. Track bank account bonuses, complete tasks, earn XP, unlock achievements, and level up your party!</p>
+            </section>
+            <section class="cta-buttons">
+                <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" class="btn btn-primary" target="_blank" rel="noopener">
+                    <span class="btn-icon">🍎</span>
+                    <span class="btn-text">
+                        <small>Download on the</small>
+                        <strong>App Store</strong>
+                    </span>
                 </a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<!-- Main Content Section -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl">
-        <!-- Content Grid: Text on left, Image on right (swaps to stack only on small screens) -->
-        <div class="flex flex-wrap -mx-4 items-center">
-            <!-- Text Content (Left side, takes full width on small screens, half on medium screens and up) -->
-            <div class="w-full sm:w-1/2 px-4 mb-8 sm:mb-0">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">
-                    Welcome to the home page for the GLP Track iOS App.
-                </h1>
-                <h2 class="text-2xl font-semibold text-indigo-600 mb-6">
-                    Custom GLP‑1 tracking. Simplified.
-                </h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Record, track, and meet your goals with <b>GLP Track</b>, the free tracking tool designed for users of GLP-1 medications like Ozempic®, Mounjaro®, Wegovy®, and Zepbound®.
-                </p>
-            </div>
-            
-            <!-- Staggered Image Layout (Right side) -->
-            <div class="w-full sm:w-1/2 px-4 flex justify-center">
-                <!-- Container set to 580px width to hold three 185px images with space-x-6 (555px total image width) -->
-                <div class="flex items-start justify-center space-x-6 w-[580px] h-[460px]"> 
-                    <!-- Image 1: Highest (Leftmost) -->
-                    <img 
-                        src="assets/1-mod.png" 
-                        class="staggered-image stagger-offset-1 rounded-xl shadow-2xl" 
-                        alt="GLP Track App Screen 1" 
-                    />
-                    <!-- Image 2: Middle offset -->
-                    <img 
-                        src="assets/3-mod.png" 
-                        class="staggered-image stagger-offset-2 rounded-xl shadow-2xl" 
-                        alt="GLP Track App Screen 2" 
-                    />
-                    <!-- Image 3: Lowest (Rightmost) -->
-                    <img 
-                        src="assets/5-mod.png" 
-                        class="staggered-image stagger-offset-3 rounded-xl shadow-2xl" 
-                        alt="GLP Track App Screen 3" 
-                    />
+                <a href="https://github.com/BonusQuestApp/bonusquest/issues" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <span class="btn-icon">🐛</span>
+                    <span class="btn-text">
+                        <small>Report issues or</small>
+                        <strong>Request Features</strong>
+                    </span>
+                </a>
+            </section>
+            <section class="features">
+                <div class="feature">
+                    <span class="feature-icon">⚔️</span>
+                    <h3>Build Your Party</h3>
+                    <p>Solo mode or team up with a partner</p>
                 </div>
-            </div>
-        </div>
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <h3>Level Up</h3>
+                    <p>Earn XP and unlock 10 milestones</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">💰</span>
+                    <h3>Track Rewards</h3>
+                    <p>Bank bonuses, credit cards, and more</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📱</span>
+                    <h3>Cloud Sync</h3>
+                    <p>Your data syncs across all devices</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">© 2025 BonusQuest. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="https://github.com/BonusQuestApp/bonusquest" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" target="_blank" rel="noopener">App Store</a>
+            </nav>
+        </footer>
     </div>
-    
-    <!-- Bottom Content Section (App Store Link) -->
-    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-6 space-y-4 sm:space-y-0">
-        <h3 class="text-3xl font-semibold text-gray-800">Ready to start tracking?</h3>
-        <a href="https://apps.apple.com/us/app/glp-track/id6748245399">
-            <img src="assets/appstore-logo.svg" width="200px" alt="Download on the App Store"/>
-        </a>
-    </div>
-
-</main>
-<!-- Simple Footer for spacing/completeness -->
-<footer class="mt-12 py-4 text-center text-sm text-gray-500 border-t border-gray-200">
-    &copy; 2025 GLP Track. All rights reserved.
-</footer>
-
 </body>
 </html>

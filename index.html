@@ -9,167 +9,465 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">🎮</div>
-            <h1>BonusQuest</h1>
-            <p class="tagline">Turn Bonus Hunting Into an Adventure</p>
-        </header>
-        <main>
-            <section class="description">
-                <p>Transform your banking rewards journey into an exciting quest system. Track bank account bonuses, complete tasks, earn XP, unlock achievements, and level up your party!</p>
-            </section>
-            <section class="cta-buttons">
-                <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" class="btn btn-primary" target="_blank" rel="noopener">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🎮 #1 Gamified Bonus Tracker</span>
+                <h1>Turn Bonus Hunting Into an Adventure</h1>
+                <p class="hero-subtitle">Track bank bonuses, complete quests, earn XP, unlock achievements, and level up your party!</p>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" class="btn btn-light btn-large" target="_blank" rel="noopener">
+                        <span class="btn-icon">🍎</span>
+                        <span class="btn-text">
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </span>
+                    </a>
+                    <a href="#features" class="btn btn-ghost btn-large">Learn More ↓</a>
+                </div>
+                <div class="hero-stats">⭐⭐⭐⭐⭐ 4.9/5 • 🎉 10K+ Downloads</div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <img src="assets/dashboard.png" alt="BonusQuest Dashboard - Track all your quests at a glance">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE SHOWCASE GRID -->
+    <section class="feature-showcase" id="features">
+        <div class="section-header fade-in">
+            <span class="section-badge">✨ Powerful Features</span>
+            <h2>Everything You Need to Crush Your Bonus Goals</h2>
+            <p>From tracking individual bonuses to managing party progress, BonusQuest has everything you need to maximize your earnings.</p>
+        </div>
+        <div class="showcase-grid">
+            <div class="showcase-card fade-in">
+                <img src="assets/dashboard.png" alt="Dashboard">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">📊</span>
+                    <h3>Dashboard</h3>
+                    <p>Track all your quests at a glance with our intuitive dashboard</p>
+                </div>
+            </div>
+            <div class="showcase-card fade-in">
+                <img src="assets/analytics1.png" alt="Analytics">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">📈</span>
+                    <h3>Analytics</h3>
+                    <p>Detailed insights into your earnings and bonus tracking</p>
+                </div>
+            </div>
+            <div class="showcase-card fade-in">
+                <img src="assets/milestones.png" alt="Milestones">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">🏆</span>
+                    <h3>Milestones</h3>
+                    <p>Unlock achievements and track your progress</p>
+                </div>
+            </div>
+            <div class="showcase-card fade-in">
+                <img src="assets/party.png" alt="Party Mode">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">👥</span>
+                    <h3>Party Mode</h3>
+                    <p>Team up with friends and tackle bonuses together</p>
+                </div>
+            </div>
+            <div class="showcase-card fade-in">
+                <img src="assets/questlog.png" alt="Quest Log">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">📝</span>
+                    <h3>Quest Log</h3>
+                    <p>Keep track of all your active and completed quests</p>
+                </div>
+            </div>
+            <div class="showcase-card fade-in">
+                <img src="assets/addquest.png" alt="Add Quest">
+                <div class="showcase-card-content">
+                    <span class="showcase-icon">➕</span>
+                    <h3>Add Quest</h3>
+                    <p>Quickly add new bank bonuses and track them</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALTERNATING FEATURE SECTIONS -->
+    
+    <!-- Feature 1: Quest System -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-text slide-in-left">
+                <span class="feature-badge">⚔️ Quest System</span>
+                <h3>Track Bank Bonuses as Epic Quests</h3>
+                <p>Transform tedious bonus hunting into an engaging adventure. Create quests for each bank bonus, set requirements, and track your progress toward completion.</p>
+                <ul class="feature-list">
+                    <li>Create unlimited quest tracking</li>
+                    <li>Set deadlines and reminders</li>
+                    <li>Break down complex bonuses into tasks</li>
+                    <li>Track completion status in real-time</li>
+                </ul>
+            </div>
+            <div class="feature-visual slide-in-right">
+                <img src="assets/questlog.png" alt="Quest Log - Track all your banking bonus quests">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Earnings Tracking -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-visual slide-in-left">
+                <img src="assets/analytics1.png" alt="Analytics Dashboard - Track your earnings and bonus progress">
+            </div>
+            <div class="feature-text slide-in-right">
+                <span class="feature-badge">💰 Earnings Tracking</span>
+                <h3>See Exactly How Much You're Earning</h3>
+                <p>Get comprehensive insights into your bonus earnings. Track individual bonuses, compare performance across banks, and visualize your financial progress.</p>
+                <ul class="feature-list">
+                    <li>Real-time earnings dashboard</li>
+                    <li>Weekly and monthly breakdowns</li>
+                    <li>Bank-by-bank comparison</li>
+                    <li>Export your data anytime</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: Party Mode -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-text slide-in-left">
+                <span class="feature-badge">👥 Party Mode</span>
+                <h3>Team Up for Bonus Hunting Success</h3>
+                <p>BonusQuest's Party Mode lets you collaborate with friends or family. Share quests, compare progress, and motivate each other to crush your bonus goals together.</p>
+                <ul class="feature-list">
+                    <li>Create and manage parties</li>
+                    <li>Share quests with party members</li>
+                    <li>Compare progress and rankings</li>
+                    <li>Celebrate wins together</li>
+                </ul>
+            </div>
+            <div class="feature-visual slide-in-right">
+                <img src="assets/party.png" alt="Party Mode - Collaborate with friends for bonus hunting">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4: Quick Setup -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <div class="feature-visual slide-in-left">
+                <img src="assets/addquest.png" alt="Quick Setup - Add new quests in seconds">
+            </div>
+            <div class="feature-text slide-in-right">
+                <span class="feature-badge">⚡ Quick Setup</span>
+                <h3>Start Tracking in Seconds</h3>
+                <p>Get up and running instantly. Our intuitive onboarding process and quick-add features let you start tracking bonuses right away, with no learning curve.</p>
+                <ul class="feature-list">
+                    <li>Simple onboarding flow</li>
+                    <li>Pre-built bonus templates</li>
+                    <li>Quick-add from popular banks</li>
+                    <li>Import from existing lists</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREENSHOT GALLERY -->
+    <section class="gallery-section">
+        <div class="gallery-header fade-in">
+            <h2>See BonusQuest in Action</h2>
+            <p>Explore all the features that make bonus tracking fun and rewarding</p>
+        </div>
+        
+        <!-- Horizontal Carousel -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item fade-in">
+                    <img src="assets/dashboard.png" alt="Dashboard - Track all your quests at a glance" data-full="assets/dashboard.png">
+                    <div class="carousel-item-caption">Dashboard</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/analytics1.png" alt="Analytics - Detailed earnings insights" data-full="assets/analytics1.png">
+                    <div class="carousel-item-caption">Analytics</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/analytics2.png" alt="Advanced Analytics - Deep dive into your data" data-full="assets/analytics2.png">
+                    <div class="carousel-item-caption">Advanced Analytics</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/questlog.png" alt="Quest Log - Your complete quest history" data-full="assets/questlog.png">
+                    <div class="carousel-item-caption">Quest Log</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/milestones.png" alt="Milestones - Unlock achievements as you progress" data-full="assets/milestones.png">
+                    <div class="carousel-item-caption">Milestones</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/party.png" alt="Party Mode - Collaborate with friends" data-full="assets/party.png">
+                    <div class="carousel-item-caption">Party Mode</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/addquest.png" alt="Add Quest - Create new banking bonus adventures" data-full="assets/addquest.png">
+                    <div class="carousel-item-caption">Add Quest</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/edittask.png" alt="Edit Tasks - Track and complete quest requirements" data-full="assets/edittask.png">
+                    <div class="carousel-item-caption">Edit Tasks</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/calendar.png" alt="Calendar - Schedule and track bonus deadlines" data-full="assets/calendar.png">
+                    <div class="carousel-item-caption">Calendar</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/settings.png" alt="Settings - Customize your experience" data-full="assets/settings.png">
+                    <div class="carousel-item-caption">Settings</div>
+                </div>
+                <div class="carousel-item fade-in">
+                    <img src="assets/appicon.png" alt="BonusQuest App Icon" data-full="assets/appicon.png">
+                    <div class="carousel-item-caption">App Icon</div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="carousel-hint">← Swipe or scroll to see more →</p>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-card fade-in">
+            <span class="cta-badge">🎮 Ready to Start?</span>
+            <h3>Download BonusQuest Today</h3>
+            <p>Join thousands of bonus hunters who have transformed their tracking into an adventure</p>
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" class="btn btn-light btn-large" target="_blank" rel="noopener">
                     <span class="btn-icon">🍎</span>
                     <span class="btn-text">
                         <small>Download on the</small>
                         <strong>App Store</strong>
                     </span>
                 </a>
-                <a href="https://github.com/BonusQuestApp/bonusquest/issues" class="btn btn-secondary" target="_blank" rel="noopener">
+                <a href="https://github.com/BonusQuestApp/bonusquest" class="btn btn-secondary btn-large" target="_blank" rel="noopener">
                     <span class="btn-icon">🐛</span>
                     <span class="btn-text">
-                        <small>Report issues or</small>
-                        <strong>Request Features</strong>
+                        <small>View on</small>
+                        <strong>GitHub</strong>
                     </span>
                 </a>
-            </section>
-            <section class="screenshots">
-                <h2>See BonusQuest in Action</h2>
-                
-                <!-- Horizontal Carousel -->
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <div class="carousel-item">
-                            <img src="assets/dashboard.png" alt="Dashboard - Track all your quests at a glance" data-full="assets/dashboard.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/questhistory.png" alt="Quest History - View your completed adventures" data-full="assets/questhistory.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/milestones.png" alt="Milestones - Unlock achievements as you progress" data-full="assets/milestones.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/partyprofile.png" alt="Party Profile - Manage your party's stats and progress" data-full="assets/partyprofile.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/addquest.png" alt="Add Quest - Create new banking bonus adventures" data-full="assets/addquest.png">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/edittask.png" alt="Edit Tasks - Track and complete quest requirements" data-full="assets/edittask.png">
-                        </div>
-                    </div>
-                </div>
-                
-                <p class="carousel-hint">Tap any screenshot to view full size</p>
-            </section>
-
-            <!-- Lightbox Modal -->
-            <div id="lightbox" class="lightbox">
-                <button class="lightbox-close">&times;</button>
-                <button class="lightbox-prev">‹</button>
-                <img class="lightbox-image" src="" alt="">
-                <button class="lightbox-next">›</button>
-                <div class="lightbox-caption"></div>
             </div>
-            <section class="features">
-                <div class="feature">
-                    <span class="feature-icon">⚔️</span>
-                    <h3>Build Your Party</h3>
-                    <p>Solo mode or team up with a partner</p>
+        </div>
+    </section>
+
+    <!-- LEGACY FEATURES GRID -->
+    <section class="features">
+        <div class="feature">
+            <span class="feature-icon">⚔️</span>
+            <h3>Build Your Party</h3>
+            <p>Solo mode or team up with a partner</p>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">🏆</span>
+            <h3>Level Up</h3>
+            <p>Earn XP and unlock 10 milestones</p>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">💰</span>
+            <h3>Track Rewards</h3>
+            <p>Bank bonuses, credit cards, and more</p>
+        </div>
+        <div class="feature">
+            <span class="feature-icon">📱</span>
+            <h3>Cloud Sync</h3>
+            <p>Your data syncs across all devices</p>
+        </div>
+    </section>
+
+    <!-- ENHANCED FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="footer-logo-icon">🎮</span>
+                    <span class="footer-logo-text">BonusQuest</span>
                 </div>
-                <div class="feature">
-                    <span class="feature-icon">🏆</span>
-                    <h3>Level Up</h3>
-                    <p>Earn XP and unlock 10 milestones</p>
+                <p>Transform your banking rewards journey into an exciting quest system. Track bank account bonuses, complete tasks, earn XP, unlock achievements, and level up your party!</p>
+                <div class="footer-social">
+                    <a href="https://twitter.com/BonusQuest" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+                    <a href="https://instagram.com/BonusQuest" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                    <a href="https://facebook.com/BonusQuest" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
                 </div>
-                <div class="feature">
-                    <span class="feature-icon">💰</span>
-                    <h3>Track Rewards</h3>
-                    <p>Bank bonuses, credit cards, and more</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="https://apps.apple.com/us/app/bonusquest/id6758683717">Download</a></li>
+                        <li><a href="https://github.com/BonusQuestApp/bonusquest">GitHub</a></li>
+                    </ul>
                 </div>
-                <div class="feature">
-                    <span class="feature-icon">📱</span>
-                    <h3>Cloud Sync</h3>
-                    <p>Your data syncs across all devices</p>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://github.com/BonusQuestApp/bonusquest#about">About</a></li>
+                        <li><a href="https://github.com/BonusQuestApp/bonusquest/issues">Contact</a></li>
+                        <li><a href="https://github.com/BonusQuestApp/bonusquest/blog">Blog</a></li>
+                    </ul>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p class="copyright">© 2025 BonusQuest. All rights reserved.</p>
-            <nav class="footer-links">
-                <a href="https://github.com/BonusQuestApp/bonusquest" target="_blank" rel="noopener">GitHub</a>
-                <a href="https://apps.apple.com/us/app/bonusquest/id6758683717" target="_blank" rel="noopener">App Store</a>
-            </nav>
-        </footer>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 BonusQuest. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">‹</button>
+        <img class="lightbox-image" src="" alt="">
+        <button class="lightbox-next" aria-label="Next image">›</button>
+        <div class="lightbox-caption"></div>
     </div>
-    
+
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselItems = document.querySelectorAll('.carousel-item img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = lightbox.querySelector('.lightbox-image');
-    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-    const prevBtn = lightbox.querySelector('.lightbox-prev');
-    const nextBtn = lightbox.querySelector('.lightbox-next');
-    
-    let currentIndex = 0;
-    const totalItems = carouselItems.length;
-    
-    // Open lightbox
-    carouselItems.forEach((img, index) => {
-        img.addEventListener('click', () => {
-            currentIndex = index;
-            updateLightbox();
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
+        // Intersection Observer for Scroll Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        
+                        // Stagger animation for showcase cards
+                        if (entry.target.classList.contains('showcase-card')) {
+                            const cards = document.querySelectorAll('.showcase-card');
+                            cards.forEach((card, index) => {
+                                setTimeout(() => {
+                                    card.classList.add('visible');
+                                }, index * 100);
+                            });
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all animated elements
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Animate hero elements immediately
+            setTimeout(() => {
+                document.querySelectorAll('.hero-text, .hero-visual').forEach(el => {
+                    el.classList.add('visible');
+                });
+            }, 100);
+            
+            // Lightbox functionality
+            const carouselItems = document.querySelectorAll('.carousel-item img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = lightbox.querySelector('.lightbox-image');
+            const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const prevBtn = lightbox.querySelector('.lightbox-prev');
+            const nextBtn = lightbox.querySelector('.lightbox-next');
+            
+            let currentIndex = 0;
+            const totalItems = carouselItems.length;
+            
+            // Open lightbox
+            carouselItems.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateLightbox();
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close lightbox
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) {
+                    // Smooth scroll for anchor links
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        const target = document.querySelector(e.target.getAttribute('href'));
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                    return;
+                }
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigate(-1);
+                if (e.key === 'ArrowRight') navigate(1);
+            });
+            
+            // Touch/swipe support for lightbox
+            let touchStartX = 0;
+            lightbox.addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+            });
+            lightbox.addEventListener('touchend', (e) => {
+                const touchEndX = e.changedTouches[0].clientX;
+                const diff = touchStartX - touchEndX;
+                if (Math.abs(diff) > 50) navigate(diff > 0 ? 1 : -1);
+            });
+            
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            function navigate(direction) {
+                currentIndex = (currentIndex + direction + totalItems) % totalItems;
+                updateLightbox();
+            }
+            
+            function updateLightbox() {
+                const img = carouselItems[currentIndex];
+                lightboxImage.src = img.dataset.full;
+                lightboxImage.alt = img.alt;
+                lightboxCaption.textContent = img.alt;
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
-    });
-    
-    // Close lightbox
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLightbox();
-    });
-    
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (!lightbox.classList.contains('active')) return;
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft') navigate(-1);
-        if (e.key === 'ArrowRight') navigate(1);
-    });
-    
-    // Touch/swipe support for lightbox
-    let touchStartX = 0;
-    lightbox.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].clientX;
-    });
-    lightbox.addEventListener('touchend', (e) => {
-        const touchEndX = e.changedTouches[0].clientX;
-        const diff = touchStartX - touchEndX;
-        if (Math.abs(diff) > 50) navigate(diff > 0 ? 1 : -1);
-    });
-    
-    function closeLightbox() {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    function navigate(direction) {
-        currentIndex = (currentIndex + direction + totalItems) % totalItems;
-        updateLightbox();
-    }
-    
-    function updateLightbox() {
-        const img = carouselItems[currentIndex];
-        lightboxImage.src = img.dataset.full;
-        lightboxImage.alt = img.alt;
-        lightboxCaption.textContent = img.alt;
-    }
-});
-</script>
+    </script>
 </body>
 </html>

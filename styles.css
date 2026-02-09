@@ -124,8 +124,8 @@ body {
 
 .phone-mockup {
     background: #1e1e2e;
-    border-radius: 3rem;
-    padding: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,255,255,0.1);
     transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
     transition: transform 0.5s ease;
@@ -893,7 +893,7 @@ header {
     }
     
     .phone-mockup {
-        max-width: 280px;
+        max-width: 220px;
         margin: 0 auto;
     }
     
@@ -938,7 +938,7 @@ header {
     }
     
     .phone-mockup {
-        max-width: 220px;
+        max-width: 180px;
     }
     
     .showcase-grid {
@@ -990,9 +990,9 @@ header {
     }
     
     .phone-mockup {
-        max-width: 180px;
-        border-radius: 2rem;
-        padding: 0.75rem;
+        max-width: 150px;
+        border-radius: 1.5rem;
+        padding: 0.5rem;
     }
     
     .phone-mockup img {
